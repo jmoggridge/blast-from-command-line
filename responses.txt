@@ -1,0 +1,40 @@
+----------------------------
+  Assignment 1 responses    
+Jason Moggridge 1159229    
+----------------------------
+
+1. How many sequences are in the LS.fasta file and how many are in the RB.fasta file?
+LS:
+952
+RB:
+692
+
+2. For distal lumen bacteria (LS), what genera do ASV_0, ASV_202, and ASV_886 belong to?
+ASV_0	Lactobacillus
+ASV_202	Holdemania
+ASV_886	Megasphaera
+
+For proximal mucosa bacteria, (RB) what genera do ASV_0, ASV_155, and ASV_558? Belong to?
+ASV_0	Lactobacillus
+ASV_155	Ethanoligenens
+ASV_588	Clostridium
+
+3. How many genera are unique to the distal lumen, unique to proximal mucosa, and common between them?
+
+Number of genera unique to LS:
+24
+Number of genera unique to RB:
+20
+Number of genera in both LS & RB:
+123
+
+
+4. What could be some limitations of this experiment and analysis? Provide brief justification
+
+Potential limitations of this study include the number of Blast hits considered for each sequence, the size of the reference database used for taxonomic classification, and the depth of sampling.
+
+Our analysis only considered the top result from BLAST (by bit score). There could be other hits with very similar scores that should also be considered. It could be worthwhile to examine several top hits for each sequence to see if there is any uncertainty in the classification from multiple hits with similarly high bit scores. The authors of BLAST recommend that at least 5 matches are considered.
+
+The reference dataset for Blast was limited to 461 sequences whereas the full NCBI non-redundant sequence database contains many thousands, some of which may be better matches to ASVs from LS and RB. Broadening our reference data could potentially improve the accuracy of classification of bacteria in LS and RB. 
+
+The sequencing only produced 952 and 692 sequences of the 16S V4 region from LS and RB respectively. As such, our sampling effort may not have been sufficient to recover sequences from rare genera that are present in low abundances. This could be examined further with a rarefaction analysis to determine whether further sampling is appropriate or if the richness present in LS and RB are adequately represented in our sequences.
