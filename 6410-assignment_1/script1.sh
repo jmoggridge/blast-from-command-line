@@ -48,7 +48,6 @@ grep -vf LS_RB_common.txt LS_genera.txt > LS_unique.txt
 
 echo "----------------------------" > responses.txt
 echo "  Assignment 1 responses    " >> responses.txt
-echo "Jason Moggridge 1159229    " >> responses.txt
 echo "----------------------------" >> responses.txt
 
 ### Q1
